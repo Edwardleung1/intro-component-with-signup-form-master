@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(./images/bg-intro-desktop.png);
+  background-image: url("./images/bg-intro-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: hsl(0, 100%, 74%);
@@ -17,33 +17,58 @@ body {
 
 .container {
   display: flex;
+  flex-wrap: wrap;
   min-height: 100vh;
+  max-width: 1200px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
-.left {
-  padding: 250px 75px 80px 150px;
-  width: 50%;
+/* I have two separate divs wrapping the container */
+.container > div {
   flex: 1;
-}
-
-.inner-container {
-  margin: 0 auto;
-  max-width: 1150px;
-}
-
-.right {
-  padding: 65px 150px 65px 75px;
-  width: 50%;
+  padding: 0 20px;
 }
 
 h1 {
   font-size: 40px;
+  line-height: 50px;
   margin-bottom: 20px;
-  flex: 1;
 }
 
 p {
+  font-size: 15px;
+  opacity: 0.8;
 }
 
-span {
+.box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.box p {
+  margin: 0;
+}
+
+.box-blue {
+  background-color: hsl(248, 32%, 49%);
+}
+
+input {
+  width: 80%;
+  padding: 15px 80px;
+  margin: 5px;
+}
+
+small {
+  display: none;
+}
+
+.error-icon {
+  display: none;
 }
