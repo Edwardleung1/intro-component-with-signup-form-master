@@ -27,10 +27,26 @@
       <div class="right">
         <p>Try it free 7 days then $20/mo. thereafter</p>
         <form>
-          First Name Last Name Email Address Password Claim your free trial
+          <input id="firstname" type="text" placeholder="First Name" />
+          <img class="error-icon" src="./images/icon-error.svg" alt="error" />
+          <small>First Name cannot be empty</small>
+
+          <input id="lastname" type="text" placeholder="Last Name" />
+          <img class="error-icon" src="./images/icon-error.svg" alt="error" />
+          <small>Last Name cannot be empty</small>
+
+          <input id="email" type="email" placeholder="Email Address" />
+          <img class="error-icon" src="./images/icon-error.svg" alt="error" />
+          <small>Looks like this is not an email</small>
+
+          <input id="password" type="password" placeholder="Password" />
+          <img class="error-icon" src="./images/icon-error.svg" alt="error" />
+          <small>Password cannot be empty</small>
+
+          <button>Claim your free trial</button>
           <small
-            >By clicking the button, you are agreeing to our Terms and
-            Services</small
+            >By clicking the button, you are agreeing to our
+            <span>Terms and Services</span></small
           >
         </form>
       </div>
